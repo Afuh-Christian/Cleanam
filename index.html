@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta content="width=devicewidth, initial-scale=1.0" name="viewport">
+
+    <style>
+    body{
+       width:100%;
+       
+}
+      *{
+        
+        text-decoration: none;
+        list-style:none;
+        padding: 0;
+        margin: 0 ;
+
+      }
+      body{
+        overflow-x: none;
+      }
+      nav{
+        background-color:white ;
+        height:13%;
+        width: 100%;
+        position:fixed;
+        
+      }
+      #im{
+        height:70%;
+      width: 15%;
+        line-height: 100px;
+        padding-top:3%;
+        margin-left:4.6%;
+      }
+      nav ul li{
+    line-height: 40px;
+        margin:0 5px;
+}
+ nav ul{
+       float: right;
+        margin-right: 20px;
+ }
+a{
+    color:black;
+}
+#check{
+    display:none;
+}
+.checkbtn{
+        font-size: 40px;;
+        color:rgb(54, 185, 236);
+        float: right;
+        line-height: 70px;
+        margin-right: 5%;
+        margin-top: 3%;
+        cursor: pointer;
+        display: block;
+        opacity: 0.7;
+         }
+ul{
+            position:fixed;
+          width:200px;
+            top: 76px;
+            background: white;
+            float: right;
+            right:-100%;
+            text-align: center;
+            transition: all 0.3s;
+
+        }
+        a:hover{
+            background:none;
+            color:rgb(54, 185, 236);
+
+        }
+#check:checked~ul{
+    right:-5% ;
+}
+
+#dd{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#e9e8f0;
+  padding-top: 22.8%; 
+  background-color:white; 
+  height: 360px;
+  width: 90%;
+  margin-left:4.6%;
+  box-shadow: 0 8px 15px 0 rgba(199, 197, 197, 0.3);
+  
+  
+  
+ /* border-color:#e9e8f0;*/
+  
+
+}/*
+#bcurve{
+  width: 100%;
+  height: 60px;
+}
+#c{
+  width: 100%;
+  height: 50%;
+  background-color:#817d7d;
+  position: relative;
+  top:-100%;
+}
+#curve{
+  background-color:#817d7d; 
+  width: 100%;
+  height:100%;
+  border-radius: 60%;
+  transform-origin: bottom;
+  transform:translateX()scale(1);
+}*/
+
+#hh{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#e9e8f0;
+  background-color: white;
+  
+  height:320px;
+  width: 90%;
+  margin-left: 4.6%;
+
+  box-shadow:0 8px 15px 0 rgba(199, 197, 197, 0.3);
+}
+#ii{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#e9e8f0;
+  background-color: white;
+  
+  height:320px;
+  width: 90%;
+  margin-left: 4.6%;
+
+  box-shadow:0 8px 15px 0 rgba(199, 197, 197, 0.3);
+}
+#img{
+  height:60%;
+  width:100%;
+  
+  
+}
+
+.wrapper{  
+        max-height: 700px;
+        border:1px solid white;
+         display: flex;
+        overflow-x: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+            }
+            .wrapper::-webkit-scrollbar{
+                width: 0;
+            }
+            .wrapper .item{
+                min-width:240px;
+                min-height:200px;
+                line-height: 50px;
+             /*   text-align: center; */
+                background-color:white;
+                margin-right: 20px;
+                
+            }
+          .title{
+           width:100%;
+           height:30px;
+           background-color:white;
+           
+          }
+          .subitem{
+          height: 250px;
+          width:100%;
+          background-color: white;
+          
+          
+          }
+          /*
+          .ww{
+            float: left;
+            font-size: 20px; 
+            font-weight: bold;
+            color:  rgb(247, 239, 239);
+            position: relative;
+            top:-35%;
+            padding-left: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+          } */
+          .ww{
+            background-color: rgb(145, 34, 34) ;
+           height: 50px;
+           width:100px;
+           
+           position: relative;
+            top:-35%;
+             float: left;
+            text-align: center;
+            font-size: 20px; 
+            font-weight: bold;
+            color:  rgb(243, 240, 240);
+            
+           
+            
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+            
+            
+          } 
+           
+           #t{
+              margin-bottom: 10px;
+           }
+
+
+         /* .kk{
+           font-size: 30px;
+           color:rgb(221, 153, 27) ;
+          }
+         /* .subsub{
+          height:100px;
+          width:200px;
+          background-color: brown;
+          position: relative;
+          top: 100px;
+          }*/
+          #b{
+            height:100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            box-shadow: 0 8px 15px 0 rgba(199, 197, 197, 0.3);/*,0 7px 21px 0 rgba(0,0,0,0.20);*/     
+          }
+         .per{
+           font-size: 13px;
+           float: right;
+           position: relative;
+            top:90%;
+         opacity: 0.5;
+         }
+         #y{
+           height: 200px;
+           background-color: white;
+           
+         }
+         #pro{
+           height: 70px;
+           width: 300px;
+           background-color: white;
+           margin-left:14%;
+           display: flex;
+           
+         }
+         #q{
+           height:40px;
+           width:40px;
+           padding-left: 50px;
+
+         }
+         #w{
+          height:30px;
+           width:30px;
+           padding-left:40px;
+           
+         }
+         #e{
+          height:30px;
+           width:30px;
+           padding-left:40px;
+           
+         }
+         #info{
+           height: 70%;
+           position:relative;
+           top:9%;
+           background-color:rgb(219,207,207);
+         }
+
+
+
+
+
+
+  #him{
+    color:cornflowerblue;
+  }
+  #hr{
+    width:80%;
+    margin-left:30px;
+    
+  }
+  #lost{
+    margin-left:20px;
+    color:gray;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  #main{
+    margin-left: 20px;
+    margin-top: 20px;
+    color:rgb(54, 185, 236);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #min{
+    margin-left: 20px;
+    color:gray;
+    font-size: small;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #clickbox{
+    background-color: rgb(54, 185, 236) ;
+    height:30px;
+    width:150px;
+    
+    
+   /* position: relative;
+    left:57.5%;
+    top: 67.5px; */
+    color: white;
+    font-size: small;
+    text-align: center;
+    margin-top: 5%;
+    margin-left:50%;
+   /* position:relative;
+    top:50px; */
+  }
+  .cl:hover{
+    background:none ;
+    color: white;
+  }
+  #pi{
+    font-size:10px;padding-top:8px;
+  }
+  
+  /*
+@media(min-width:1030px){
+  #dd{
+    height: 580px;
+  }
+  #hh{
+height: 600px;
+  }
+  nav{
+    height: 160px;
+  }
+  img{
+    padding-top: 35px;
+    height:110px;
+  width: 110px;
+  }
+ .y .p{
+   padding-left: 330px;
+ }
+}
+
+@media(min-width:771px){
+  #dd{
+    height: 580px;
+  }
+  #hh{
+height: 600px;
+  }
+  nav{
+    height: 160px;
+  }
+  img{
+    padding-top: 35px;
+    height:110px;
+  width: 110px;
+  }
+ .y .p{
+   padding-left: 230px;
+ }
+}
+@media(max-width:770px){
+  #dd{
+    height: 420px;
+  }
+  nav{
+    height: 140px;
+  }
+  img{
+    padding-top: 30px;
+    height:90px;
+  width: 90px;
+  }
+  #hh{
+height: 400px;
+  }
+}
+  @media(max-width:545px){
+    #dd{
+  height: 255px;
+}
+nav{
+        
+        height:90px;
+      }
+      img{
+        height:60px;
+      width: 60px;
+        line-height: 100px;
+        padding-top: 15px;
+        margin-left:30px;
+      }
+  }
+
+
+@media(max-width:376px){
+#dd{
+  height: 227px;
+}
+nav{
+        
+        height:70px;
+      }
+      img{
+        height:50px;
+      width: 50px;
+        line-height: 100px;
+        padding-top: 10px;
+        margin-left:20px;
+      }
+}
+@media(max-width:322px){
+#dd{
+  height: 215px;
+}
+
+nav{
+      
+        height:90px;
+      }
+      img{
+        height:60px;
+      width: 60px;
+        line-height: 100px;
+        padding-top: 15px;
+        margin-left:30px;
+        
+      }
+}
+*/
+
+
+
+   /* <!-- ##################################### --> */
+
+.box{
+             margin-top: 150px;
+            margin-left: 200px;
+            height: 70px;
+            width: 250px;
+            background-color:rgb(243, 240, 240);
+            padding: 20px;  
+            box-shadow: 0 8px 15px 0 rgba(199, 197, 197, 0.3);
+            border-radius: 8px;
+            transform: translate(-50%,-50%) scale(0);
+           
+        }
+        .chat{
+            background-color: rgb(54, 185, 236);
+            margin: 10px;
+            border-color:rgb(54, 185, 236) ;
+            border-radius: 5px;
+            color:gray;
+          font-size: small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .cancle{
+          color:gray;
+          font-size: small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .box.active{
+            transition: all 300ms ease-in-out;
+            transform: translate(-50%,-50%) scale(1);
+        }
+        .comand{
+          color:gray;
+          font-size: small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .close-btn{
+            cursor: pointer;
+            position:absolute;
+            right:10px;
+            top:10px;
+            width: 20px;
+            height: 20px;
+            background: #222;
+            color:#fff;
+            font-size: 20px;
+            font-weight: 600px;
+            line-height: 18px;
+            text-align: center;
+            border-radius: 50%;
+
+        }
+
+        /* <!-- ##################################### --> */
+
+
+@media(max-width:370px){
+   #hh{
+     height: 330px;
+   }
+   #ii{
+     height:350px;
+   }
+}
+@media(max-width:325px){
+
+  .checkbtn{     
+    margin-right:5%;
+  }
+
+  #dd{
+    width:91%;
+  }
+  #ii{
+    width:91%;
+    height: 370px;
+  }
+  #hh{
+    width:91%;
+  }
+  #clickbox{
+    margin-left:40%;
+  }
+  .wrapper{
+    margin-right: 5%;
+  }
+
+ #pro{
+   background-color: white;
+  width: 200px;
+  padding-left: 0px;
+ }
+ #q{
+   padding-left:20px ;
+ }
+}
+@media(max-width:285px){
+  #im{
+    width:60px;
+    padding-top:4%;
+  }
+}
+@media(min-width:540px){
+
+  #dd{
+    height: 500px;
+  padding-top: 20%;
+  margin-left: 5%;
+  }
+  #hh{
+    margin-left: 5%;
+  }
+  #clickbox{
+     margin-left:65%;
+  }
+#pro{
+  padding-left:25%;
+}
+#im{
+  margin-left:5%;
+}
+#img{
+  height:65%;
+}
+nav{
+  height:15% ;
+}
+}
+@media(min-width:767px){
+  #dd{
+    height: 650px;
+  padding-top: 24%;
+  margin-left: 5%;
+  }
+
+  #clickbox{
+     margin-left:65%;
+     height: 60px;
+     width:200px;
+     margin-top: 3%;
+  }
+#pro{
+  padding-left:15%;
+}
+#im{
+  margin-left:5%;
+}
+#img{
+  height:70%;
+}
+nav{
+  height:18% ;
+}
+
+p{
+  font-size: x-large;
+}
+#pi{
+  font-size: x-large;
+
+}
+#min{
+  font-size:x-large;
+}
+#hh{
+  height: 450px;
+}
+#ii{
+  height: 450px;
+}
+.wrapper .item{
+                min-width:340px;
+                min-height:300px;   
+          }
+          .subitem{
+          height: 350px;
+          }
+          #q{
+   height: 60px;
+   width: 60px;
+   
+  }
+  #w{
+   height: 50px;
+   width: 50px;
+   
+  }
+  #e{
+  height: 50px;
+  width: 50px;
+  
+  }
+  .per{
+           font-size: 25px;
+           float: right;
+           position: relative;
+            top:80%;
+           opacity:0.5;
+          }
+          #him{
+    color:cornflowerblue;
+    font-size: 25px;
+  }
+}
+@media(min-width:1022px){
+  #pro{
+    padding-left:20%;
+  }
+  #dd{
+    height:720px;
+  }
+  p{
+  font-size: x-large;
+}
+#pi{
+  font-size: x-large;
+
+}
+#min{
+  font-size:x-large;
+}
+.checkbtn{
+  font-size:90px;
+}
+
+}
+@media(min-width:1100px){
+  #dd{
+    height: 600px;
+    
+  margin-left: 5%;
+  }
+
+  #clickbox{
+     margin-left:65%;
+     height: 60px;
+     width:200px;
+     margin-top: 3%;
+  }
+#pro{
+  padding-left:20%;
+}
+#im{
+  height:90%;
+  margin-left:5%;
+  padding-top: 1%;
+  
+}
+#img{
+  height:95%;
+  margin-top: -15%;
+}
+nav{
+  height:24%;
+}
+
+p{
+  font-size: x-large;
+}
+#pi{
+  font-size: x-large;
+
+}
+#min{
+  font-size:x-large;
+}
+#hh{
+  height: 500px;
+}
+#ii{
+  height: 500px;
+}
+.wrapper .item{
+                min-width:340px;
+                min-height:300px;   
+          }
+          .subitem{
+          height: 350px;
+          }
+          #q{
+   height: 60px;
+   width: 60px;
+   
+  }
+  #w{
+   height: 50px;
+   width: 50px;
+   
+  }
+  #e{
+  height: 50px;
+  width: 50px;
+  
+  }
+  .per{
+           font-size: 25px;
+           float: right;
+           position: relative;
+            top:80%;
+           opacity:0.5;
+          }
+          #him{
+    color:cornflowerblue;
+    font-size: 25px;
+  }
+}
+
+
+    </style>
+
+
+<!-- ##################################### -->
+<script>
+  function togglePopup(){
+      document.getElementById("box-1").classList.toggle("active");
+  }
+  function laterfun(){
+    togglePopup()
+    setTimeout(togglePopup,100000)
+  }
+  setTimeout(togglePopup,1000)
+</script>
+<!-- ##################################### -->
+
+
+    </head>
+    <body>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+      <nav>
+        <input type = "checkbox" id = "check">
+        <label for ="check" class = "checkbtn">
+          <i class = "fas fa-bars"></i>
+        </label>
+        <img src = "logo.png" id = "im">
+        <ul>
+          <li><a href = "https://wa.me/message/E45G2DYVNY7YD1">Contact</a></li>
+          <li><a href = "https://wa.me/message/E45G2DYVNY7YD1">Help</a></li>
+         <!-- <li><a href = "#">three</a></li>
+          <li><a href = "#">four</a></li>-->
+          
+        </ul>
+       
+        <!-- ##################################### -->
+      <div class="box" id="box-1">
+        <div class="comand">Message Cleanam Co Ltd on Whatsapp</div>
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <a href="https://wa.me/message/E45G2DYVNY7YD1">
+           <button class="chat" onclick="togglePopup()">Chat now</button>
+        </a>
+        <button class="cancle" onclick="laterfun()">later</button>
+    </div>
+<!-- ##################################### -->
+        
+
+    
+
+
+
+      </nav>
+      <section> <div id="dd">
+      <img src = "pic.jpg" id="img"><br>
+       <p id = "main">Goal</p><br>
+       <p id = "min">Enhance waste sorting at source </p>
+       <a  class = "cl" href = "#"><div id = "clickbox"><p id = "pi" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">READ MORE</p></div></a>
+       
+       
+      
+      </div><br><br><br>
+      <!--<div id = "bcurve">
+      <div id = "curve"></div>
+      <div id = "c"></div>
+      </div>-->
+     
+      <div  id= "ii"><br>
+        <div id = "lost" style=" color:rgb(54, 185, 236); font-size:16px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><p>Targets<p></p></div><br><br>
+        <div id = "lost"><p>To attain these goals we set the following targets:</p></div><br>
+        <div id = "lost"><p>Instill culture of sorting waste in the general</p>
+                        <p>population</p> </div><br>
+        <div id = "lost"><p>Reduce dumping of waste in streams and rivers</p>
+                        <p>by 50% in 2 years</p> </div><br>
+        <div id = "lost"><p>Recycling 20% of waste generated in Bamenda</p></div><br>
+        
+        
+        
+        <a  class = "cl" href = "#"><div id = "clickbox"><p id = "pi" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">READ MORE</p></div></a>
+      </div> <br><br><br><br>
+      <div  id= "hh"><br>
+        <div id = "lost" style=" color:rgb(54, 185, 236); font-size:16px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><p>Execution</p></div><br>
+        <div id = "lost"><p>We install 2 sets of color coded 80L trash bins</p>
+          <p>per home</p>
+          </div><br>
+        <div id = "lost"><p>We educate clients on baseline sorting practices </p></div><br>
+        <div id = "lost"><p>We collect the refuse twice a week for an</p>
+          <p>agreed affordable fee</p></div><br>
+        <div id = "lost"><p>We supply well sorted waste to thriving </p>
+                         <p>recycling startups </p></div><br>
+                         <a  class = "cl" href = "#"><div id = "clickbox"><p id = "pi" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">READ MORE</p></div></a>
+        </div><br><br><br><br>
+     <!-- <br><h1 style="text-align: center;">Hello clean</h1>
+     -->
+    </section>
+    <div class="wrapper">
+ <div class="item"><div class = "title"><!--<p>house</p>--></div><div class = "subitem"><img src="1.jpg" id="b"><div class="ww"><p id = "t">TEAM</p></div></div></div>
+ <div class="item"><div class = "title"><!--<p>house</p>--></div><div class = "subitem"><img src="2.jpg" id="b"><div class="ww" style = "width:170px;"><p id = "t">ACTIVITIES</p></div></div></div>
+ <div class="item"><div class = "title"><!--<p>house</p>--></div><div class = "subitem"><img src="3.jpg" id="b"><div class="ww" style = "width:150px;"><p id = "t">CLIENTS</p></div></div></div>
+ <div class="item"><div class = "title"><!--<p>house</p>--></div><div class = "subitem"><img src="4.jpg" id="b"><div class="ww" style = "width:170px;"><p id = "t">PARTNERS</p></div></div></div>
+    </div>
+    
+    <div id = y>
+    <div id="pro">
+       <div><a href="https://wa.me/message/E45G2DYVNY7YD1" target="_blank"><img src="a.jpg" id="q"></a></div>
+       <div><a href="https://www.facebook.com/Cleanam-111727794663852/" target="_blank"><img src="b.jpg" id="w"></a></div>
+       <div><a href="https://www.instagram.com/p/CRLg4lsFUtw/?utm_medium=copy_link" target="_blank"><img src="c.jpg " id="e"></a></div>
+       
+    </div>
+    <div id="info">
+     <p class="per">Designed by: <a href = "https://wa.me/qr/DHNPHYO4JBXED1" target ="_blank" id = "him">Chrisfk@</a></p>
+    </div>
+    </div>  
+
+    <!--
+    <div id="y">
+      <div id="pro">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="info">
+
+      </div>
+    </div> -->
+            
+              
+      
+           
+    </body>
+</html>
